@@ -1,0 +1,35 @@
+body{
+    background-color: #7c6a9e;
+}
+
+.formulario{
+    border-radius: 6px;
+    display: flexbox;
+    flex-wrap: nowrap;
+    margin: 10px;
+    padding: 5px 15px;
+}
+
+.forma, .respuesta{
+    background-color: #f2e9f8;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.forma{
+    padding: 30px;
+}
+
+.respuesta{
+    color: #000000;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+.vac{
+    width: 100px;
+    height: 100px;
+}

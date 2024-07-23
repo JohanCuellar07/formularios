@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <br>
+  <div class="vac"></div>
+    <div class="container">
+        <div class="col-10 row formulario">
+            <div class="col-8 forma">
+                <form class="row g-3 needs-validation" method="#" novalidate onsubmit="return areas();">
+                    <div class="col-md-4">
+                      <label for="txtBase" class="form-label">Base</label>
+                      <input type="number" class="form-control" id="txtBase" value="0" min="0" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="txtAltura" class="form-label">Altura</label>
+                        <input type="number" class="form-control" id="txtAltura" value="0" min="0" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="selFigura" class="form-label">Figura</label>
+                      <select class="form-select" id="selFigura" required>
+                        <option selected disabled value="">Elige...</option>
+                        <option  value="cuadrado">Cuadrado</option>
+                        <option  value="rectangulo">Rectángulo</option>
+                        <option  value="triangulo">Triángulo</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Calcular</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="col-4 respuesta">
+                <h4>Respuesta</h4>
+                <div id="resultado">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/areas.js"></script>
+</body>
+</html>

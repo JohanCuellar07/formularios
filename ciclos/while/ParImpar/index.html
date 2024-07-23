@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <br>
+  <div class="vac"></div>
+    <div class="container">
+        <div class="col-10 row formulario">
+            <div class="col-8 forma">
+                <form class="row g-3 needs-validation" method="#" novalidate onsubmit="return contarNum();">
+                    <div class="col-md-8">
+                      <label for="txtNumUno" class="form-label">Contador hasta</label>
+                      <input type="number" class="form-control" id="txtNumUno" value="0" min="0" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Contar</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="col-4 respuesta">
+                <h4>Respuesta</h4>
+                <div id="resultado">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/ParImpar.js"></script>
+</body>
+</html>
